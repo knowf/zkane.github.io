@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1、注释中的代码也能执行12345public static void main(String[] args) &amp;#123;    // 下面这行代码会执行，因为 \\u000d 是一个换行符    // \u000d System.out.println(&amp;quot;hello world&amp;quot;);&amp;#125; 2、除数为0也可以不报错下面的代码会在控制台打印Infinity1System">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2019/03/03/Java的一些冷门知识点/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1、注释中的代码也能执行12345public static void main(String[] args) &amp;#123;    // 下面这行代码会执行，因为 \\u000d 是一个换行符    // \u000d System.out.println(&amp;quot;hello world&amp;quot;);&amp;#125; 2、除数为0也可以不报错下面的代码会在控制台打印Infinity1System">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-03-03T07:16:41.336Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="1、注释中的代码也能执行12345public static void main(String[] args) &amp;#123;    // 下面这行代码会执行，因为 \\u000d 是一个换行符    // \u000d System.out.println(&amp;quot;hello world&amp;quot;);&amp;#125; 2、除数为0也可以不报错下面的代码会在控制台打印Infinity1System">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Java的一些冷门知识点" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/03/Java的一些冷门知识点/" class="article-date">
+  <time datetime="2019-03-03T07:16:41.336Z" itemprop="datePublished">2019-03-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="1、注释中的代码也能执行"><a href="#1、注释中的代码也能执行" class="headerlink" title="1、注释中的代码也能执行"></a>1、注释中的代码也能执行</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args) &#123;</span><br><span class="line">    // 下面这行代码会执行，因为 \\u000d 是一个换行符</span><br><span class="line"></span><br><span class="line">    // \u000d System.out.println(&quot;hello world&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="2、除数为0也可以不报错"><a href="#2、除数为0也可以不报错" class="headerlink" title="2、除数为0也可以不报错"></a>2、除数为0也可以不报错</h4><p>下面的代码会在控制台打印<code>Infinity</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(1.0 / 0.0);</span><br></pre></td></tr></table></figure></p>
+<h4 id="3、取余的正负号"><a href="#3、取余的正负号" class="headerlink" title="3、取余的正负号"></a>3、取余的正负号</h4><p>a%b的定义是<code>(a/b)*b+a%b=a</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(14 % -4);// 打印2</span><br><span class="line">System.out.println(-14 % 4);// 打印-2</span><br></pre></td></tr></table></figure>
+<h4 id="4、负数的绝对值还是负数"><a href="#4、负数的绝对值还是负数" class="headerlink" title="4、负数的绝对值还是负数"></a>4、负数的绝对值还是负数</h4><p>下面两行的代码都会打印<code>-2147483648</code>，因为int类型的最大整数为2^31-1，所以造成了整数溢出。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(Math.abs(Integer.MIN_VALUE));</span><br><span class="line">System.out.println(-Integer.MIN_VALUE);</span><br></pre></td></tr></table></figure></p>
+<h4 id="5、为什么数组的起始索引是0而不是1"><a href="#5、为什么数组的起始索引是0而不是1" class="headerlink" title="5、为什么数组的起始索引是0而不是1"></a>5、为什么数组的起始索引是0而不是1</h4><p>这个习惯来源于机器语言，那时要计算一个数组元素的地址需要将数组的起始地址加上该元素的索引。将起始索引设为1要么会浪费数组的第一个元素的空间，要么会花费额外的时间来将索引减1。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/03/03/Java的一些冷门知识点/" data-id="cjssl210100009xg2lfc3ri68" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/03/03/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/03/03/Java的一些冷门知识点/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/03/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
